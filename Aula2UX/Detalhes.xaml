@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aula2UX.Detalhes">
+	<StackLayout>
+		<Label Text="{Binding Anuncio.Titulo}"></Label>
+		<Image Source="{Binding Anuncio.Src}"></Image>
+		<Label Text="{Binding Anuncio.Valor}"></Label>
+		<Label Text="{Binding Anuncio.Texto}"></Label>
+	</StackLayout>
+</ContentPage>

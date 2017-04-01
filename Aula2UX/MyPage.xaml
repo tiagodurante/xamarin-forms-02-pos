@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aula2UX.MyPage">
+	<Grid Padding="10" BackgroundColor="White">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*">
+			</RowDefinition>
+			<RowDefinition Height="auto">
+			</RowDefinition>
+		</Grid.RowDefinitions>
+		<ListView Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding Nomes}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<TextCell Text="{Binding Nome}" Detail="{Binding Nome}"/>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<Button Grid.Row="1" Grid.Column="0" Text="Adicionar" Clicked="adicionar"></Button>
+		<Button Grid.Row="1" Grid.Column="1" Text="Anuncios" Clicked="abrirAnuncios"></Button>
+	</Grid>
+</ContentPage>

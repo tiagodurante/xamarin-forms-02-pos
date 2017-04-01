@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Aula2UX.Anuncios">
+	<Grid BackgroundColor="White">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*">
+			</RowDefinition>
+			<RowDefinition Height="auto">
+			</RowDefinition>
+		</Grid.RowDefinitions>
+		<ListView Grid.Row="0" Grid.ColumnSpan="2" ItemsSource="{Binding dados}" ItemSelected="Handle_ItemSelected">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ImageCell ImageSource="{Binding Src}" Text="{Binding Titulo}" Detail="{Binding Valor}" />
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</Grid>
+</ContentPage>

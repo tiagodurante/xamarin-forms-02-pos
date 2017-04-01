@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Aula2UX" x:Class="Aula2UX.Aula2UXPage" Title="Pagina Inicial">
+	<StackLayout BackgroundColor="Silver" Padding="20">
+		<Entry Keyboard="Email" Text="{Binding Email}" Placeholder="digite o e-mail">
+		</Entry>
+		<Entry IsPassword="true" Keyboard="Numeric">
+		</Entry>
+		<StackLayout Orientation="Horizontal">
+			<Button Command="{Binding CmdNavegar}" HorizontalOptions="FillAndExpand" Text="Avançar"></Button>
+		</StackLayout>
+	</StackLayout>
+</ContentPage>
